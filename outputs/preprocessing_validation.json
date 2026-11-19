@@ -1,0 +1,30 @@
+{
+  "project": ".",
+  "runs": [
+    {
+      "name": "128_workers0",
+      "returncode": 0,
+      "log": "CIFAR-10 validation PASSED\nCounts: {'classifier_train': 50000, 'patch_optimization': 50000, 'test_evaluation': 10000}\nClassifier batch: shape=(128, 3, 32, 32), dtype=torch.float32\nPatch batch: shape=(128, 3, 32, 32), range=[0.000000, 1.000000]\nTest batch: shape=(128, 3, 32, 32), range=[0.000000, 1.000000], shuffle=False\nDifferentiable normalization: PASSED\nDefault/custom normalization, CHW/NCHW gradients, no input mutation: PASSED\nTransforms, class balance, sampler, deterministic evaluation: PASSED\nFull pixel-space scans: {'patch_optimization': {'total': 50000, 'range': [0.0, 1.0]}, 'test_evaluation': {'total': 10000, 'range': [0.0, 1.0]}}\nSample grid: outputs/cifar10_samples.png\n"
+    },
+    {
+      "name": "17_workers2",
+      "returncode": 0,
+      "log": "CIFAR-10 validation PASSED\nCounts: {'classifier_train': 50000, 'patch_optimization': 50000, 'test_evaluation': 10000}\nClassifier batch: shape=(17, 3, 32, 32), dtype=torch.float32\nPatch batch: shape=(17, 3, 32, 32), range=[0.000000, 1.000000]\nTest batch: shape=(17, 3, 32, 32), range=[0.000000, 1.000000], shuffle=False\nDifferentiable normalization: PASSED\nDefault/custom normalization, CHW/NCHW gradients, no input mutation: PASSED\nTransforms, class balance, sampler, deterministic evaluation: PASSED\nFull pixel-space scans: {'patch_optimization': {'total': 50000, 'range': [0.0, 1.0]}, 'test_evaluation': {'total': 10000, 'range': [0.0, 1.0]}}\nSample grid: outputs/cifar10_samples_b17.png\n"
+    }
+  ],
+  "files": {
+    "dataset.py": "d08c3b0b85142e1d5c07e475eff7d56d72ee37c6bfe7cbb99b56f6242a2b61b7",
+    "test_dataset.py": "4286708c5beea62fe919ff41cc1c99873327573d05cc6556c3e5376e0ba754a1",
+    "README.md": "beb299ab739d2f9b7dde11065fb7ad38ce9e1aa1db28a3076ecd9ba58410bdcb"
+  },
+  "protected_data_models_unchanged": true,
+  "protected_file_count": 22,
+  "grids": {
+    "outputs/cifar10_samples.png": 101095,
+    "outputs/cifar10_samples_b17.png": 101095
+  },
+  "publication": {
+    "note": "Machine-specific absolute project paths made relative; recorded measurements and hashes unchanged. Original preserved in ECE661_Code.zip.",
+    "original_file_sha256": "f1e2e7422d914ad00de9f4de491bd6582411b076164146eae0be74f44da067dc"
+  }
+}

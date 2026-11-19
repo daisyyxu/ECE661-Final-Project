@@ -1,0 +1,10 @@
+CIFAR-10 validation PASSED
+Counts: {'classifier_train': 50000, 'patch_optimization': 50000, 'test_evaluation': 10000}
+Classifier batch: shape=(17, 3, 32, 32), dtype=torch.float32
+Patch batch: shape=(17, 3, 32, 32), range=[0.000000, 1.000000]
+Test batch: shape=(17, 3, 32, 32), range=[0.000000, 1.000000], shuffle=False
+Differentiable normalization: PASSED
+Default/custom normalization, CHW/NCHW gradients, no input mutation: PASSED
+Transforms, class balance, sampler, deterministic evaluation: PASSED
+Full pixel-space scans: {'patch_optimization': {'total': 50000, 'range': [0.0, 1.0]}, 'test_evaluation': {'total': 10000, 'range': [0.0, 1.0]}}
+Sample grid: outputs/cifar10_samples_b17.png

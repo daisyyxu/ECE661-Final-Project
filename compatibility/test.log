@@ -1,0 +1,34 @@
+resnet18: strict load, original factory, forward, frozen-model input gradients PASSED
+resnet18/upstream: 128/10000, 92.19%, elapsed 0.2s
+resnet18/upstream: 2688/10000, 92.75%, elapsed 4.4s
+resnet18/upstream: 5248/10000, 92.80%, elapsed 8.5s
+resnet18/upstream: 7808/10000, 93.11%, elapsed 12.5s
+resnet18/upstream: 9307/10000 = 93.07%
+resnet18/project_default: 128/10000, 92.19%, elapsed 0.2s
+resnet18/project_default: 2688/10000, 92.75%, elapsed 4.2s
+resnet18/project_default: 5248/10000, 92.80%, elapsed 8.2s
+resnet18/project_default: 7808/10000, 93.11%, elapsed 12.1s
+resnet18/project_default: 9307/10000 = 93.07%
+vgg16_bn: strict load, original factory, forward, frozen-model input gradients PASSED
+vgg16_bn/upstream: 128/10000, 95.31%, elapsed 0.4s
+vgg16_bn/upstream: 2688/10000, 93.86%, elapsed 8.7s
+vgg16_bn/upstream: 5248/10000, 93.71%, elapsed 16.8s
+vgg16_bn/upstream: 7808/10000, 93.94%, elapsed 25.0s
+vgg16_bn/upstream: 9400/10000 = 94.00%
+vgg16_bn/project_default: 128/10000, 95.31%, elapsed 0.4s
+vgg16_bn/project_default: 2688/10000, 93.86%, elapsed 8.1s
+vgg16_bn/project_default: 5248/10000, 93.71%, elapsed 15.9s
+vgg16_bn/project_default: 7808/10000, 93.94%, elapsed 24.0s
+vgg16_bn/project_default: 9400/10000 = 94.00%
+densenet121: strict load, original factory, forward, frozen-model input gradients PASSED
+densenet121/upstream: 128/10000, 95.31%, elapsed 0.4s
+densenet121/upstream: 2688/10000, 93.75%, elapsed 9.1s
+densenet121/upstream: 5248/10000, 93.77%, elapsed 17.8s
+densenet121/upstream: 7808/10000, 94.06%, elapsed 26.5s
+densenet121/upstream: 9406/10000 = 94.06%
+densenet121/project_default: 128/10000, 95.31%, elapsed 0.4s
+densenet121/project_default: 2688/10000, 93.75%, elapsed 9.1s
+densenet121/project_default: 5248/10000, 93.77%, elapsed 17.7s
+densenet121/project_default: 7808/10000, 94.06%, elapsed 26.3s
+densenet121/project_default: 9407/10000 = 94.07%
+Results: compatibility/results.json

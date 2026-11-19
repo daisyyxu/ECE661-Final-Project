@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "secret_pattern_review": "PASSED",
+    "machine_absolute_path_review": "PASSED",
+    "excluded_data_weights_archives_environments_caches": "PASSED",
+    "python_ast_syntax": "PASSED",
+    "png_integrity": "PASSED",
+    "server_source_equivalence": "PASSED",
+    "compatibility_calculations_unchanged": "PASSED",
+    "published_measurements_unchanged": "PASSED"
+  },
+  "note": "Static publication checks, not a new experiment. Pattern scanning cannot guarantee detection of every possible secret.",
+  "byte_identical_server_files": [
+    "dataset.py",
+    "test_dataset.py",
+    "compatibility/vendor/PyTorch_CIFAR10/LICENSE",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/resnet.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/vgg.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/densenet.py"
+  ],
+  "syntax_checked_python_files": [
+    "compatibility/test_pretrained.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/densenet.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/resnet.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/vgg.py",
+    "dataset.py",
+    "test_dataset.py"
+  ],
+  "reviewed_files": [
+    ".gitignore",
+    "README.md",
+    "compatibility/results.json",
+    "compatibility/test.log",
+    "compatibility/test_pretrained.py",
+    "compatibility/vendor/PyTorch_CIFAR10/LICENSE",
+    "compatibility/vendor/PyTorch_CIFAR10/UPSTREAM_COMMIT",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/densenet.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/resnet.py",
+    "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/vgg.py",
+    "dataset.py",
+    "docs/PRETRAINED_MODELS.md",
+    "docs/PUBLICATION_NOTES.md",
+    "outputs/cifar10_samples.png",
+    "outputs/cifar10_samples_b17.png",
+    "outputs/preprocessing_validation.json",
+    "outputs/preprocessing_validation.log",
+    "outputs/preprocessing_validation_b17.log",
+    "outputs/publication_checks.json",
+    "requirements.txt",
+    "test_dataset.py"
+  ],
+  "findings": []
+}

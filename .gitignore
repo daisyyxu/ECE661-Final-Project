@@ -1,0 +1,37 @@
+# Raw datasets and pretrained / trained checkpoints
+data/
+**/state_dicts/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.partial
+
+# Environments, caches, machine-local settings and secret-bearing files
+.venv/
+venv/
+venv-python310/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.*
+
+# Installation/transfer history and old local backups (not experiment evidence)
+compatibility/install*.log
+compatibility/weights-download.log
+*.pre-normalization-*
+*.patch

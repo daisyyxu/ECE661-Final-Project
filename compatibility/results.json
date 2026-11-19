@@ -1,0 +1,323 @@
+{
+  "environment": {
+    "python": "3.11.17 (main, Oct  1 2026, 20:17:42) [GCC 14.3.0]",
+    "executable": ".venv/bin/python",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 128
+  },
+  "repository": {
+    "url": "https://github.com/huyvnphan/PyTorch_CIFAR10",
+    "commit": "641cac24371b17052b9bb6e56af1c83b5e97cd7f",
+    "weights_source": "https://drive.google.com/file/d/17fmN8eQdLpq2jIMQ_X0IXDPXfI9oVWgq/view"
+  },
+  "preprocessing": {
+    "dataset_py": "dataset.py",
+    "sha256_before": "1920ab85a3a2d1ccbf0413ffc85afa3d09fad64dbbe89344da0dc061bb658f9d",
+    "project_mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "project_std": [
+      0.247,
+      0.2435,
+      0.2616
+    ],
+    "upstream_mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "upstream_std": [
+      0.2471,
+      0.2435,
+      0.2616
+    ],
+    "method": "Existing test_evaluation loader (ToTensor only), then existing normalize_for_classifier with explicit statistics.",
+    "sha256_after": "1920ab85a3a2d1ccbf0413ffc85afa3d09fad64dbbe89344da0dc061bb658f9d",
+    "unchanged": true
+  },
+  "models": {
+    "resnet18": {
+      "strict_load": {
+        "passed": true,
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "state_dict_keys": 122
+      },
+      "upstream_pretrained_factory": "PASSED",
+      "checkpoint": {
+        "path": "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/state_dicts/resnet18.pt",
+        "bytes": 44775417,
+        "sha256": "72d30ca70e7d54e24a26628113604c40bc872eb8dc7a44f50ec58c3a1400f1b0"
+      },
+      "parameter_count": 11173962,
+      "forward": [
+        {
+          "input": [
+            1,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            1,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            2,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            2,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            128,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            128,
+            10
+          ],
+          "finite": true
+        }
+      ],
+      "input_gradient": {
+        "passed": true,
+        "shape": [
+          2,
+          3,
+          32,
+          32
+        ],
+        "finite": true,
+        "nonzero_per_image": [
+          true,
+          true
+        ],
+        "abs_max": 0.009746761992573738,
+        "abs_mean": 0.0005432360921986401,
+        "parameter_gradients_none": true,
+        "batchnorm_buffers_unchanged": true
+      },
+      "accuracy": {
+        "upstream": {
+          "correct": 9307,
+          "total": 10000,
+          "percent": 93.07,
+          "seconds": 15.967537228018045
+        },
+        "project_default": {
+          "correct": 9307,
+          "total": 10000,
+          "percent": 93.07,
+          "seconds": 15.485128334723413
+        }
+      },
+      "normalization_prediction_disagreements": 0,
+      "status": "PASSED",
+      "seconds": 32.14333433425054
+    },
+    "vgg16_bn": {
+      "strict_load": {
+        "passed": true,
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "state_dict_keys": 97
+      },
+      "upstream_pretrained_factory": "PASSED",
+      "checkpoint": {
+        "path": "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/state_dicts/vgg16_bn.pt",
+        "bytes": 134652824,
+        "sha256": "9c10607463b05f9bf3b879eeb06f24e5ef80db2c25d7c3a0e642d6e4aa98cf5c"
+      },
+      "parameter_count": 33646666,
+      "forward": [
+        {
+          "input": [
+            1,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            1,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            2,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            2,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            128,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            128,
+            10
+          ],
+          "finite": true
+        }
+      ],
+      "input_gradient": {
+        "passed": true,
+        "shape": [
+          2,
+          3,
+          32,
+          32
+        ],
+        "finite": true,
+        "nonzero_per_image": [
+          true,
+          true
+        ],
+        "abs_max": 0.0015148334205150604,
+        "abs_mean": 0.00015250255819410086,
+        "parameter_gradients_none": true,
+        "batchnorm_buffers_unchanged": true
+      },
+      "accuracy": {
+        "upstream": {
+          "correct": 9400,
+          "total": 10000,
+          "percent": 94.0,
+          "seconds": 32.130749179050326
+        },
+        "project_default": {
+          "correct": 9400,
+          "total": 10000,
+          "percent": 94.0,
+          "seconds": 30.79888528911397
+        }
+      },
+      "normalization_prediction_disagreements": 0,
+      "status": "PASSED",
+      "seconds": 64.33267582487315
+    },
+    "densenet121": {
+      "strict_load": {
+        "passed": true,
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "state_dict_keys": 727
+      },
+      "upstream_pretrained_factory": "PASSED",
+      "checkpoint": {
+        "path": "compatibility/vendor/PyTorch_CIFAR10/cifar10_models/state_dicts/densenet121.pt",
+        "bytes": 28435902,
+        "sha256": "8d5c7e8d0383f660de7201d1b29c9964c0f4393394e6066460bee04a68f01173"
+      },
+      "parameter_count": 6956426,
+      "forward": [
+        {
+          "input": [
+            1,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            1,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            2,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            2,
+            10
+          ],
+          "finite": true
+        },
+        {
+          "input": [
+            128,
+            3,
+            32,
+            32
+          ],
+          "output": [
+            128,
+            10
+          ],
+          "finite": true
+        }
+      ],
+      "input_gradient": {
+        "passed": true,
+        "shape": [
+          2,
+          3,
+          32,
+          32
+        ],
+        "finite": true,
+        "nonzero_per_image": [
+          true,
+          true
+        ],
+        "abs_max": 0.008226151578128338,
+        "abs_mean": 0.0004578655061777681,
+        "parameter_gradients_none": true,
+        "batchnorm_buffers_unchanged": true
+      },
+      "accuracy": {
+        "upstream": {
+          "correct": 9406,
+          "total": 10000,
+          "percent": 94.06,
+          "seconds": 33.760151027701795
+        },
+        "project_default": {
+          "correct": 9407,
+          "total": 10000,
+          "percent": 94.07,
+          "seconds": 33.63840445689857
+        }
+      },
+      "normalization_prediction_disagreements": 2,
+      "status": "PASSED",
+      "seconds": 68.42692576209083
+    }
+  },
+  "publication": {
+    "note": "Machine-specific absolute project paths made relative; recorded measurements and hashes unchanged. Original preserved in ECE661_Code.zip.",
+    "original_file_sha256": "2209155b5bc359c8b723d314f66dbf2402d18f0e5179c82bc7473e963f4875c8"
+  }
+}
