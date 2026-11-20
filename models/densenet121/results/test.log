@@ -1,0 +1,12 @@
+Server environment: {'python': '3.11.17', 'torch': '2.15.0+cpu', 'torchvision': '0.29.2+cpu', 'platform': 'Linux-5.15.0-139-generic-x86_64-with-glibc2.35', 'device': 'cpu', 'batch_size': 128, 'num_workers': 0, 'threads': 4, 'interpreter_name': 'python3.11'}
+Official checkpoint SHA256 and strict=True loading: PASSED
+Forward B=1: [1, 3, 32, 32] -> [1, 10] PASSED
+Forward B=2: [2, 3, 32, 32] -> [2, 10] PASSED
+Forward B=128: [128, 3, 32, 32] -> [128, 10] PASSED
+Frozen parameters, finite/nonzero input gradients, unchanged BatchNorm: PASSED
+Clean evaluation: 128/10000 images, accuracy 95.31%
+Clean evaluation: 2688/10000 images, accuracy 93.75%
+Clean evaluation: 5248/10000 images, accuracy 93.77%
+Clean evaluation: 7808/10000 images, accuracy 94.06%
+Clean accuracy: 9406/10000 = 94.06%
+DenseNet121 independent tests + full 10000-image evaluation PASSED
